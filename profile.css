@@ -185,3 +185,31 @@ body{
     left: 0;
     z-index: 10;
 }
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 25%;
+    top: 0;
+    width: 50%; 
+    height: 50%; 
+    overflow: auto; 
+  }
+  
+  .modal-content {
+    text-align: center;
+    background-color: #1a990c;
+    margin: auto;
+    top: 30%;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+ .pay-text {
+
+    font-weight: bold;
+ }
+  

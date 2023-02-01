@@ -132,11 +132,38 @@
     </div>
 </div>
 </div>
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <p class="pay-text">Payment Processed Successfully</p>
+  </div>
+</div>
 </div>
 </body>
 <script>
   function myFunc(){
-    alert("Payment Processing...")
+    alert("Payment Loading...")
+    const modal = document.getElementById("myModal");
+  setTimeout(function() {
+    modal.style.display = "block";
+  }, 3000);
+
+  setTimeout(function(){
+  modal.style.display = "none";
+},5000)
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+  //   alert("Payment loading...");
+
+  // // Wait for 5 seconds
+  // setTimeout(function() {
+  //   // Display a payment done popup
+  //   alert("Payment done!");
+  // }, 5000);
   }
 </script>
 </html>
